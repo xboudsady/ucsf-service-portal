@@ -59,7 +59,7 @@
     <div class="container">
         <h2>Xayaseth Boudsady</h2>
         <p>xayaseth.boudsady@ucsf.edu</p>
-        <p class="text-center"><a href="index.html" role="button">Sign Out</a></p>
+        <p class="text-center"><a href="index.html" class="btn btn-primary btn-md" role="button">Sign Out</a></p>
     </div>
   </div>
   <!-- /Jumbotron-->
@@ -210,22 +210,22 @@
       <div class="form-group row">
         <div class="col-sm-4">
           <label for=""> Approver Name:</label>
-          <input type="text" class="form-control" id="" maxlength="40" required="required" placeholder="Jane Doe">
+          <input type="text" class="form-control" id="" maxlength="40" required="required">
         </div>
         <div class="col-sm-4">
           <label for=""> Approver Email:</label>
-          <input type="email" class="form-control" id="" maxlength="64" required="required" placeholder="jane.doe@ucsf.edu">
+          <input type="email" class="form-control" id="" maxlength="64" required="required">
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-sm-4">
           <label for=""> Assignee Name:</label>
-          <input type="text" class="form-control" id="" maxlength="40" required="required" placeholder="Jon Doe">
+          <input type="text" class="form-control" id="" maxlength="40" required="required">
         </div>
         <div class="col-sm-4">
           <label for=""> Assignee Email:</label>
-          <input type="email" class="form-control" id="" maxlength="64" required="required" placeholder="jon.doe@ucsf.edu">
+          <input type="email" class="form-control" id="" maxlength="64" required="required">
         </div>
       </div>
       <!-- /Approval Section -->
@@ -386,34 +386,49 @@
       <div class="form-group row">
         <div class="col-sm-3">
           <label for="">Speed Type:</label>
-          <input type="text" class="form-control" id="" maxlength="40" required="required" placeholder="">
+          <input type="text" class="form-control" id="" maxlength="40" required="required" placeholder="Will populate required field...">
         </div>
       </div>
       <div class="form-group row">
-        <div class="col-sm-3">
+        <div class="col-sm-2">
           <span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span>
           <label for="">Business Unit:</label>
           <input type="text" class="form-control" id="" maxlength="40" required="required" placeholder="">
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-2">
           <span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span>
           <label for="">Fund:</label>
           <input type="text" class="form-control" id="" maxlength="40" required="required" placeholder="">
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-2">
           <span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span>
           <label for="">Dept ID:</label>
           <input type="text" class="form-control" id="" maxlength="40" required="required" placeholder="">
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-2">
           <span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span>
           <label for="">Project ID:</label>
           <input type="text" class="form-control" id="" maxlength="40" required="required" placeholder="">
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-2">
           <span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span>
           <label for="">Function:</label>
           <input type="text" class="form-control" id="" maxlength="40" required="required" placeholder="">
+        </div>
+        <div class="col-sm-2">
+          <span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span>
+          <label for="">Percentage:</label>
+          <input type="text" class="form-control" id="" maxlength="40" required="required" value="100.00">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-2">
+          <label for="">Flex Field:</label>
+          <input type="text" class="form-control" id="" maxlength="40">
+        </div>
+        <div class="col-sm-2">
+          <label for="">MC Account</label>
+          <input type="text" class="form-control" id="" maxlength="40">
         </div>
       </div>
       <!-- /Funding -->
@@ -421,59 +436,77 @@
       <hr class="hr-hidden">
 
 
-      <legend><span class="number">7</span> Contact Information</legend>
+      <legend><span class="number">7</span> Contact Information  <a href="https://directory.ucsf.edu/" target="_blank"><i class="fa fa-search" aria-hidden="true"></i></a><span style="color:#afafaf"> (Look Up)</span></legend>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value=""> Check here if same as Primary Contact, or fill out fields below.
+        </label>
+      </div>
       <!-- Contact Info-->
       <div class="form-group row">
         <div class="col-sm-4">
-          <label for="DeptName"><span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span> Department Name:</label>
-          <input type="text" class="form-control" id="DeptName" maxlength="40" required="required" value="Campus Life Services: Facilities Services">
+          <label for="ContactName"><span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span> Name:</label>
+          <input type="text" class="form-control" id="ContactName" maxlength="40" required="required">
         </div>
         <div class="col-sm-4">
-          <label for="ContactName"><span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span> Primary Contact:</label>
-          <input type="text" class="form-control" id="ContactName" maxlength="40" required="required" value="Xayaseth (Seth) Boudsady">
+          <label for="ContactEmail"><span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span> Email:</label>
+          <input type="email" class="form-control" id="ContactEmail" maxlength="64" required="required">
         </div>
         <div class="col-sm-4">
           <label for="ContactTitle">Title</label>
-          <input type="email" class="form-control" id="ContactTitle" maxlength="80" required="required" value="Business System Analyst">
+          <input type="email" class="form-control" id="ContactTitle" maxlength="80" required="required">
         </div>
       </div>
       <div class="form-group row">
         <div class="col-sm-4">
           <label for="ContactPhone"><span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span> Phone:</label>
-          <input type="text" class="form-control" id="ontactPhone" maxlength="40" required="required" value="415-774-6713">
+          <input type="text" class="form-control" id="ontactPhone" maxlength="40" required="required">
         </div>
         <div class="col-sm-1">
           <label for="ContactBox">Box:</label>
-          <input type="text" class="form-control" id="ContactBox" maxlength="4" required="required" value="9999">
+          <input type="text" class="form-control" id="ContactBox" maxlength="4" required="required">
         </div>
         <div class="col-sm-3">
           <label for="ContactFax">Fax:</label>
           <input type="text" class="form-control" id="ContactFax" maxlength="14" required="required">
         </div>
+        
         <div class="col-sm-4">
-          <label for="ContactEmail"><span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span> Email address</label>
-          <input type="email" class="form-control" id="ContactEmail" maxlength="64" required="required" value="xayaseth.boudsady@ucsf.edu">
+          <label for="DeptName"></span> Department Name:</label>
+          <input type="text" class="form-control" id="DeptName" maxlength="40" required="required">
         </div>
       </div>
       <!-- /Contact Info-->
 
       <hr class="hr-hidden">
 
-      <legend><span class="number">4</span> Site</legend>
+      <legend><span class="number">8</span> Site Contact</legend>
       <!-- Site Contact Info-->
       <div class="form-group row">
+        <div class="col-sm-12">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="">
+              Check here if Site Contact is the same as above requestor, or fill out fields below.
+            </label>
+          </div>
+        </div>
+
+      </div>
+      <div class="form-group row">
         <div class="col-sm-4">
-          <label for="ContactName"><span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span> Name</label>
+          <label for="ContactName">Name:</label>
           <input type="text" class="form-control" id="ContactName" maxlength="30" required="true">
         </div>
         <div class="col-sm-4">
-          <label for="ContactPhone"><span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span> Primary Contact:</label>
-          <input type="text" class="form-control" id="ContactPhone" maxlength="14">
-        </div>
-        <div class="col-sm-4">
-          <label for="exampleInputEmail1"><span class="glyphicon glyphicon-asterisk requiredField" aria-hidden="true"></span> Email address</label>
+          <label for="exampleInputEmail1">Email:</label>
           <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
         </div>
+        <div class="col-sm-4">
+          <label for="ContactPhone">Phone:</label>
+          <input type="text" class="form-control" id="ContactPhone" maxlength="14">
+        </div>
+        
       </div> <!-- /Contact Info-->
       
       <hr class="hr-hidden">

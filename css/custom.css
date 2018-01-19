@@ -53,7 +53,7 @@ a:focus {
 
 .jumbotron {
   background-color: #148CCB;
-  margin-top: 20px;
+  padding-bottom: 0px;
   -webkit-box-shadow: 0 10px 6px -10px #777;
   -moz-box-shadow: 0 10px 6px -10px #777;
   box-shadow: 0 10px 6px -10px #777;
@@ -194,6 +194,7 @@ border: 1px solid #90bd31;
   font-size: 20px;
   color: #f26d04;
 }
+
 
 
 
