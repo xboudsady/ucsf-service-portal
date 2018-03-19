@@ -94,6 +94,16 @@ a:focus {
   border: 1px solid #9fcbe2;
 }
 
+#sign-in-btn {
+  background-color: #178CCb;
+  color: #fff;
+  border-color: #ccc;
+}
+#sign-in-btn:hover {
+  background-color: #e2e1de;
+  color: black;
+}
+
 
 
 /* ===================================
@@ -159,6 +169,14 @@ a:focus {
 border: 1px solid #90bd31;
 }
 
+.info-button {
+  text-align: center;
+}
+
+.sr-icon:hover {
+  border: 2px solid red;
+}
+
 
 /* ===================================
       Modal
@@ -175,6 +193,7 @@ border: 1px solid #90bd31;
 
 #modalLink {
   font-weight: 400;
+  margin-bottom: 25px;
 }
 
 

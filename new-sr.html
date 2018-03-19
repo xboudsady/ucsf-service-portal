@@ -67,10 +67,10 @@
 
   <!-- Heading -->
   <div class="container">
-    <h4><a href="main.html">Return to My Work Orders</a></h4>
+    <h4><a href="main.html">Home</a></h4>
 
     <p>Please be aware that work orders submitted via the web are only handled during normal business hours.</p>
-    <p>For emergencies always call the Customer Service Center directly at <a href="tel:+1-476-2021">476-2021</a>.</p>
+    <p>For <span style="color: red;">emergencies</span> always call the Customer Service Center directly at <a href="tel:+1-415-476-2021">415-476-2021</a>.</p>
   </div>
   <!-- /Heading-->
 
@@ -80,70 +80,90 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-md-2">
-        <div class="thumbnail">
-          <div class="caption">
-            <center>
-              <h1><i class="fa fa-home" aria-hidden="true"></i></h1>
-              <p>Housing</p>
-              <p><a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#housingModal">Info</a></p>
-            </center>
-          </div>
+        <div class="thumbnail sr-icon">
+          <a href="#">
+            <div class="caption">
+              <center>
+                <h1><i class="fa fa-home" aria-hidden="true"></i></h1>
+                <p>Housing</p>
+              </center>
+            </div>
+          </a>
+        </div>
+        <div class="info-button">
+          <p><a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#housingModal">Info</a></p>
         </div>
       </div>
       <div class="col-sm-6 col-md-2">
-        <div class="thumbnail">
+        <div class="thumbnail sr-icon">
           <div class="caption">
             <center>
               <h1><i class="fa fa-ticket" aria-hidden="true"></i></h1>
               <p>Event Set-Ups</p>
-              <p><a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#eventSetupModal">Info</a></p>
             </center>
           </div>
         </div>
+        <div class="info-button">
+            <p><a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#eventSetupModal">Info</a></p>
+        </div>
       </div>
       <div class="col-sm-6 col-md-2">
-        <div class="thumbnail">
+        <div class="thumbnail sr-icon">
           <div class="caption">
             <center>
               <h1><i class="fa fa-key" aria-hidden="true"></i></h1>
               <p>Key Requests</p>
-              <p><a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#keyRequestModal">Info</a></p>
             </center>
           </div>
         </div>
+        <div class="info-button">
+          <p><a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#keyRequestModal">Info</a></p>
+        </div>
       </div>
       <div class="col-sm-6 col-md-2">
-        <div class="thumbnail">
+        <div class="thumbnail sr-icon">
           <div class="caption">
             <center>
               <h1><i class="fa fa-wrench" aria-hidden="true"></i></h1>
               <p>Facilities Request</p>
-              <p><a href="" class="btn btn-default" role="button" data-toggle="modal" data-target="#facilitiesFundedModal">Info</a></p>
+              
             </center>
           </div>
         </div>
+        <div class="info-button">
+          <p>
+            <a href="" class="btn btn-default" role="button" data-toggle="modal" data-target="#facilitiesFundedModal">Info</a>
+          </p>
+        </div>
       </div>
       <div class="col-sm-6 col-md-2">
-        <div class="thumbnail">
+        <div class="thumbnail sr-icon">
           <div class="caption">
             <center>
               <h1><i class="fa fa-calendar" aria-hidden="true"></i></h1>
               <p>Projects</p>
-              <p><a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#fsProjectsModal">Info</a></p>
             </center>
           </div>
         </div>
+        <div class="info-button">
+          <p>
+            <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#fsProjectsModal">Info</a>
+          </p>
+        </div>
       </div>
       <div class="col-sm-6 col-md-2">
-        <div class="thumbnail">
+        <div class="thumbnail sr-icon">
           <div class="caption">
             <center>
               <h1><i class="fa fa-volume-control-phone" aria-hidden="true"></i></h1>
               <p>Quick Response<br>1 (415) 476-2021</p>
-              <p><a href="tel:+1-415-476-2021" class="btn btn-default" role="button">Call </a></p>
-              
             </center>
           </div>
+        </div>
+        <div class="info-button">
+          <p>
+            <a href="tel:+1-415-476-2021" class="btn btn-default" role="button">Call </a>
+          </p>
         </div>
       </div>
     </div>
@@ -165,8 +185,7 @@
         <div class="modal-body">
           <h4>Housing Request</h4>
           <br>
-          <p>Please use this request for all housing related maintenance issues.</p>
-          <p>Use this type for all Housing related maintenance issues.</p>
+          <p>Please use this request for all Housing-related maintenance issues.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -186,30 +205,21 @@
           <h4 class="modal-title" id="eventSetupModalLabel">Event Set-Ups</h4>
         </div> -->
         <div class="modal-body">
-          <h4>Event Set-Up Work Orders</h4>
+          <h4>Event Set-Up Service Requests</h4>
           <br>
           <p>Use this request for custodial set-ups to support events and functions.</p>
           <p>Set-ups for events and functions are funded by the customer, with the exception of RCO sponsored events.</p>
-          <br>
-          <h4>Setups for Parnassus Campus:</h4>
           <p>Please book <strong>5 days</strong> in advance to ensure setup can be scheduled.</p>
-          <p>Include the following information in the work description:</p>
+          <p>Facilities does not provide event set ups for the following areas:</p>
           <ul>
-            <li><strong>Event Date(s)</strong></li>
-            <li><strong>Event Time</strong> (period during which booking is actually taking place)</li>
-            <li><strong>Reserved Time</strong> (total time for which the room is reserved; generally event time plus setup/teardown hours)</li>
-            <li><strong>Required Features:</strong>
-              <ul>
-                <li>easels</li>
-                <li>recycling bins</li>
-                <li>extra trash cans</li>
-                <li>extra chairs and tables</li>
-              </ul>
-            <li><strong>Include</strong> setup style and for special setups include diagram.</li>
+            <li>Housing</li>
+            <li>Mission Bay Hospital</li>
+            <li>Mt. Zion Cancer Research Center</li>
+            <li>Leased buildings or outlying areas</li>
           </ul>
           <br>
           <h4>Questions?</h4>
-            <p>Please contact the <strong>Customer Service Center</strong> at <a href="tel:+1-476-2021"><strong>476-2021</strong></a>, or email us at <a href="mailto:fmcustservice@fm.ucsf.edu">fmcustservice@fm.ucsf.edu</a>.</p>
+            <p>Please contact the <strong>Customer Service Center</strong> at <a href="tel:+1-415-476-2021"><strong>415-476-2021</strong></a>, or email us at <a href="mailto:facilities@ucsf.edu">facilities@ucsf.edu</a>.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -225,14 +235,14 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-body">
-          <h4> Key Request Work Orders</h4>
+          <h4> Key Requests</h4>
           <br>
           <p>Use this request for ordering keys only.</p>
           <p>Key requests are funded by the customer.</p>
           <br>
           <h4>Questions?</h4>
           <p>Please contact the <strong>Customer Service Center</strong> at ,
-            or email us at <a href="mailto:fmcustservice@fm.ucsf.edu">fmcustservice@fm.ucsf.edu</a>.</p>
+            or email us at <a href="mailto:facilities@ucsf.edu">facilities@ucsf.edu</a>.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -248,21 +258,11 @@
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-body">
-          <h4>Facilities Funded Work</h4>
-          <p>Use this request for regular building maintenance and repair work such as restroom maintenance and burned out light bulbs.</p>
-          <p>Facilities funded work is generally for maintenance of... 
-            <ul>
-              <li>building corridors</li>
-              <li>building systems such as ventilation</li>
-              <li>lobbies</li>
-              <li>restrooms</li>
-              <li>classrooms</li>
-              <li>and other public spaces</li>
-            </ul>
-            While there are exceptions, generally work needed within an office,or lab, or suite will be <strong>CUSTOMER FUNDED WORK</strong> and will need a <strong>DPA/Fund</strong> for recharge.</p>
-            <hr>
-            <p>Following is a partial list of both maintenance services funded by the state and maintenance services that are not state funded and therefore chargeable to the customer. These are examples and this list is not comprehensive.</p>
-          <p>Call the <strong>Customer Service Center</strong> at <a href="tel:+1-476-2021"><strong>476-2021</strong></a> for help in confirming funding source.</p>
+          <h4>Facilities Service Request</h4>
+          <p>Generally work needed within an office,or lab, or suite will be customer funded work and will require a chart of accounts string or speedtype for recharge.</p>
+          <hr>
+          <p>Following is a partial list of maintenance services funded by the state and services that are not state funded and therefore chargeable to the customer. These are examples and this list is not comprehensive.</p>
+          <p>If you need assistance to determine if your request is billable, please call <strong>Customer Service Center</strong> at <a href="tel:+1-415-476-2021"><strong>415-476-2021</strong></a>.</p>
           <br>
           <!-- ACCORDIAN Area of Service-->
           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -946,10 +946,6 @@
 
           
           <!-- /ACCRODIAN Area of Service -->
-
-            <h4>Questions?</h4>
-            <p>Please contact the <strong>Customer Service Center</strong> at <a href="tel:+1-476-2021"><strong>476-2021</strong></a>,
-              or email us at <a href="mailto:fmcustservice@fm.ucsf.edu">fmcustservice@fm.ucsf.edu</a>.</p>
           </div>
 
           <div class="modal-footer">
