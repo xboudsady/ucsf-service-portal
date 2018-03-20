@@ -196,6 +196,10 @@ border: 1px solid #90bd31;
   margin-bottom: 25px;
 }
 
+#quick-response {
+  padding-bottom: 0;
+}
+
 
 /* ===================================
       Work Details
