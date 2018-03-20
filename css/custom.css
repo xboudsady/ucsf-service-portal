@@ -69,13 +69,26 @@ a:focus {
 .jumbotron h2 {
   color: white;
   font-weight: 200;
-  text-align: center;
+  text-align: left;
+}
+
+.jumbotron h3 {
+  color: white;
+  font-weight: 200;
+  text-align: right;
+}
+
+.jumbotron h4 {
+  color: white;
+  font-weight: 200;
+  text-align: right;
+  margin-top: 30px;
 }
 
 .jumbotron p {
   color: white;
   font-weight: 200;
-  text-align: center;
+  text-align: left;
 }
 
 .jumbotron btn {
