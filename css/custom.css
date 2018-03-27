@@ -190,6 +190,10 @@ border: 1px solid #90bd31;
   border: 2px solid red;
 }
 
+.img-inline {
+  display: inline;
+}
+
 
 /* ===================================
       Modal
