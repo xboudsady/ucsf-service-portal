@@ -188,9 +188,9 @@
         <div class="col-sm-6">
           <div class="radial">
             <label class="radio-inline">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> <p>Nameplate (standard) 12" x 1" (1 line of text) &nbsp;&nbsp;&nbsp;</p> 
+              <input type="radio" name="sign-selection" id="nameplate-standard" value="nameplate-standard"> <p>Nameplate (standard) 12" x 1" (1 line of text) &nbsp;&nbsp;&nbsp;</p> 
             </label>
-            <a href="#" data-toggle="modal" data-target="#nameplate-standard">
+            <a href="#" data-toggle="modal" data-target="#nameplate-standard-modal">
               <h2 class="img-inline">
                 <i class="fas fa-image"></i>
               </h2>
@@ -200,10 +200,10 @@
         <div class="col-sm-6">
           <div class="radial">
             <label class="radio-inline">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> <p>Nameplate (larger) - 12" x 2" (Up to 2 lines of text) &nbsp;&nbsp;&nbsp;</p> 
+              <input type="radio" name="sign-selection" id="nameplate-larger" value="nameplate-larger"> <p>Nameplate (larger) - 12" x 2" (Up to 2 lines of text) &nbsp;&nbsp;&nbsp;</p> 
             </label>
             <a href="#">
-              <h2 class="img-inline" data-toggle="modal" data-target="#nameplate-larger">
+              <h2 class="img-inline" data-toggle="modal" data-target="#nameplate-larger-modal">
                 <i class="fas fa-image"></i>
               </h2>
             </a>
@@ -215,11 +215,11 @@
         <div class="col-sm-6">
           <div class="radial">
             <label class="radio-inline">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+              <input type="radio" name="sign-selection" id="sign-dept-12-2" value="sign-dept-12-2">
               <p>Sign (Dept) - 12" x 2" (Up to 2 lines of text) &nbsp;&nbsp;&nbsp;</p>
             </label>
             <a href="#">
-              <h2 class="img-inline" data-toggle="modal" data-target="#sign-dept-12-2">
+              <h2 class="img-inline" data-toggle="modal" data-target="#sign-dept-12-2-modal">
                 <i class="fas fa-image"></i>
               </h2>
             </a>
@@ -229,10 +229,10 @@
         <div class="col-sm-6">
           <div class="radial">
             <label class="radio-inline">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+              <input type="radio" name="sign-selection" id="sign-dept-12-4" value="sign-dept-12-4">
               <p>Sign (Dept) - 12" x 4" Department ID sign, Gray Sign w/ Black Font &nbsp;&nbsp;&nbsp;</p>
             </label>
-            <a href="#" data-toggle="modal" data-target="#sign-dept-12-4">
+            <a href="#" data-toggle="modal" data-target="#sign-dept-12-4-modal">
               <h2 class="img-inline">
                 <i class="fas fa-image"></i>
               </h2>
@@ -240,12 +240,11 @@
           </div>
         </div>
       </div>
-
       <div class="form-group row">
         <div class="col-sm-6">
           <div class="radial">
             <label class="radio-inline">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+              <input type="radio" name="sign-selection" id="ada-braille" value="ada-braille">
               <p>ADA Sign (Braille, Aluminum, Raised Letters) - 12" x 2"</p>
             </label>
           </div>
@@ -253,7 +252,7 @@
         <div class="col-sm-6">
           <div class="radial">
             <label class="radio-inline">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+              <input type="radio" name="sign-selection" id="ada-no-braille" value="ada-no-braille">
               <p>Mock-ADA (No Braille, No Raised Lettering</p>
             </label>
           </div>
@@ -264,7 +263,7 @@
         <div class="col-sm-6">
           <div class="radial">
             <label class="radio-inline">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+              <input type="radio" name="sign-selection" id="restroom-men" value="restroom-men">
               <p>Restroom - Men's</p>
             </label>
           </div>
@@ -272,18 +271,17 @@
         <div class="col-sm-6">
           <div class="radial">
             <label class="radio-inline">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+              <input type="radio" name="sign-selection" id="restroom-women" value="restroom-women">
               <p>Restroom - Women's</p>
             </label>
           </div>
         </div>
       </div>
-
       <div class="form-group row">
         <div class="col-sm-6">
           <div class="radial">
             <label class="radio-inline">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+              <input type="radio" name="sign-selection" id="restroom-neutral" value="restroom-neutral">
               <p>Restroom - Gender Neutral</p>
             </label>
           </div>
@@ -291,7 +289,7 @@
         <div class="col-sm-6">
           <div class="radial">
             <label class="radio-inline">
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+              <input type="radio" name="sign-selection" id="custom-describe" value="custom-describe">
               <p>Custom (Describe in Notes)</p>
             </label>
           </div>
@@ -325,14 +323,14 @@
               <strong>YES</strong>", your order will not be placed until an estimate is created, and approval is received.</p>
             <div class="radial">
               <label class="radio-inline">
-                <input type="radio" name="estimateRadio" id="estimateRadio" value="option1">
-                <p>Yes</p>
+                <input type="radio" name="estimate-yes-no" id="estimate-no" value="estimate-no" checked>
+                <p>No</p>
               </label>
             </div>
             <div class="radial">
               <label class="radio-inline">
-                <input type="radio" name="estimateRadio" id="estimateRadio" value="option1" checked>
-                <p>No</p>
+                <input type="radio" name="estimate-yes-no" id="estimate-yes" value="estimate-yes">
+                <p>Yes</p>
               </label>
             </div>
           </div>
@@ -348,13 +346,13 @@
               <br>Depending on the scope of the installation, additional charges may apply.</p>
             <div class="radial">
               <label class="radio-inline">
-                <input type="radio" name="installradio" id="installradio" value="option1" checked>
-                <p>Do not install, just deliver</p>
+                <input type="radio" name="installation-yes-no" id="installtion-no" value="installtion-no" checked>
+                <p>No, Do not install, just deliver</p>
               </label>
             </div>
             <div class="radial">
               <label class="radio-inline">
-                <input type="radio" name="installradio" id="installradio" value="option1">
+                <input type="radio" name="nstallation-yes-no" id="installation-yes" value="installation-yes">
                 <p>Yes, I understand that installation fees may apply</p>
               </label>
             </div>
@@ -377,14 +375,14 @@
               12x2, 12x4, etc...)</p>
             <div class="radial">
               <label class="radio-inline">
-                <input type="radio" name="metalBracket" id="metalBracket" value="option1">
-                <p>Yes, include one bracket for each sign</p>
+                <input type="radio" name="bracket-yes-no" id="bracket-no" value="bracket-no" checked>
+                <p>No, bracket already exist at location</p>
               </label>
             </div>
             <div class="radial">
               <label class="radio-inline">
-                <input type="radio" name="metalBracket" id="metalBracket" value="option1" checked>
-                <p>No, bracket already exist at location</p>
+                <input type="radio" name="bracket-yes-no" id="bracket-yes" value="bracket-yes">
+                <p>Yes, include one bracket for each sign</p>
               </label>
             </div>
           </div>
@@ -551,7 +549,7 @@
   ======================================= -->
 
     <!-- nameplate-standard -->
-    <div class="modal fade" id="nameplate-standard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="nameplate-standard-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -570,7 +568,7 @@
     <!-- /nameplate-standard-->
 
     <!-- nameplate-standard -->
-    <div class="modal fade" id="nameplate-larger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="nameplate-larger-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -589,7 +587,7 @@
     <!-- /nameplate-standard-->
 
     <!-- sign-dept-12-2 -->
-    <div class="modal fade" id="sign-dept-12-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="sign-dept-12-2-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -608,7 +606,7 @@
     <!-- /sign-dept-12-2 -->
 
     <!-- sign-dept-12-4 -->
-    <div class="modal fade" id="sign-dept-12-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="sign-dept-12-4-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
